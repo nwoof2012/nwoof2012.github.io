@@ -208,6 +208,10 @@ body, html {
         margin-right: 0;
     }
 
+    .cover {
+        height: 100vh;
+    }
+
     .sidebar {
         flex-shrink: 0;
         width: 100%;
