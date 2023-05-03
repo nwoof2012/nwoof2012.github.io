@@ -13,8 +13,8 @@ menuObject.style.top = '-100vh';
 var container = document.querySelector("html");
 button.addEventListener("click", function() {
     //do your stuff 
-    if (menuObject.style.top != '-100vh') {
-        menuObject.style.top = '-100vh';
+    if (menuObject.style.top != '-150vh') {
+        menuObject.style.top = '-150vh';
         container.classList.remove("scroll-hide");
     } else {
         menuObject.style.top = 0;
