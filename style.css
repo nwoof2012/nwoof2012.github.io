@@ -184,6 +184,7 @@ body, html {
  @media only screen and (min-device-width: 320px) and (max-device-width: 428px) and (min-device-height: 480px) and (max-device-height: 926px) and (-webkit-min-device-pixel-ratio: 2) {
     .mid-section {
         flex-direction: column;
+        padding-bottom: 20px;
     }
     .body .box {
         width: calc(100% - 1vh - 20px);
@@ -247,6 +248,7 @@ body, html {
         display: block;
         padding-top: 20vw;
         transition: 0.25s top;
+        overflow-y: scroll;
     }
 
     .dropdown-container .dropdown {
@@ -270,10 +272,15 @@ body, html {
         z-index: 1001;
         font-size: 15vw;
     }
+
+        .footer {
+            padding: 5vw;
+        }
  }
   @media only screen and (min-device-width:480px) and (max-device-width: 926px) and (min-device-height: 320px) and (max-device-height: 428px) and (-webkit-min-device-pixel-ratio: 2) {
       .mid-section {
           flex-direction: column;
+          padding-bottom: 20px;
       }
 
       .body .box {
@@ -317,10 +324,20 @@ body, html {
         font-size: 38px;
       }
 
+      .cover {
+        height: 100vh;
+      }
+
       .cover h1 {
-          font-size: 20vw;
-          left: calc(50% - 32vw);
-          top: calc(50vh - 30vw);
+        position: absolute;
+        font-size: 20vw;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        height: 20vw;
+        width: 65vw;
+        margin: auto;
       }
 
       .global-grid nav a:not(.dropdown-link) {
@@ -337,6 +354,7 @@ body, html {
           display: block;
           padding-top: 10vh;
           transition: 0.25s top;
+          overflow-y: scroll;
       }
 
       .dropdown-container .dropdown {
@@ -360,5 +378,9 @@ body, html {
           color: #fff;
           z-index: 1001;
           font-size: 15vh;
+      }
+
+      .footer {
+        padding: 5vh;
       }
   }
