@@ -384,3 +384,18 @@ body, html {
         padding: 5vh;
       }
   }
+
+  @media only screen and (orientation: portrait) and (-webkit-max-device-pixel-ratio: 1) {
+    .footer {
+        padding: 2vw;
+    }
+
+    .box {
+        box-shadow: 1vw 1vw #222;
+    }
+
+    .side-item {
+        padding: 1vw;
+        margin: 1vw;
+    }
+  }
