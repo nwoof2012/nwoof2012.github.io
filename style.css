@@ -68,7 +68,7 @@ body, html {
 }
 
 .body {
-    flex-grow: 0;
+    flex-grow: 1;
     max-width: 70%;
 }
 
@@ -76,6 +76,7 @@ body, html {
     flex-shrink: 1;
     margin-right: 2vh;
     margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .box {
@@ -86,7 +87,7 @@ body, html {
 
 .body .box {
     margin: 10px 5% 10px 5%;
-    max-width: 1083px;
+    width: 1083px;
     padding: 10px;
     float: right;
     /*border: 1px solid #444;
@@ -98,9 +99,19 @@ body, html {
     text-align: center;
 }
 
-.body .box p {
+.body .box p, .body .box ul {
     font-family: arial;
     font-size: 18px;
+}
+
+.body .box .minihead {
+    font-family: arial;
+    font-size: 18px;
+    font-weight: 1000;
+}
+
+.body .box a {
+    color: #F00;
 }
 
 .body .box:last-of-type {
