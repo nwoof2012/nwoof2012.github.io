@@ -346,7 +346,7 @@ body, html {
           margin-right: 0;
       }
 
-      .body .box p, .sidebar .box p {
+      .body .box p, .sidebar .box p, .box ul *, .box b {
         font-size: 24px;
       }
 
