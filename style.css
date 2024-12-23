@@ -113,12 +113,35 @@ body, html {
     border-radius: 2.5vh;*/
 }
 
-.body .box h1 {
+.system-requirements {
+    display: flex;
+    flex-direction: column;
+}
+
+.system-requirements .row {
+    display: flex;
+    overflow-wrap: anywhere;
+    justify-content: center;
+}
+
+.system-requirements .row .column {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    background: #333;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 25px;
+    box-shadow: 0.5vh 0.5vh #222;
+}
+
+.body .box h1, .body .box .row .column h1, .body .box .row .column h2, .body .box .row .column h3 {
     font-family: arial;
     text-align: center;
 }
 
-.body .box p, .body .box ul {
+.body .box p, .body .box ul, .body .box .row .column div {
     font-family: arial;
     font-size: 18px;
 }
