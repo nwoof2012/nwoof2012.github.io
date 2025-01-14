@@ -253,7 +253,6 @@ body.dark * {
         border: 1px solid var(--color-body-flex);
         border-radius: 25px;
         box-shadow: 0.5vh 0.5vh var(--color-body-box-shadow);
-    }ox-shadow: 0.5vh 0.5vh var(--color-body-box-shadow);
     }
 }
 
