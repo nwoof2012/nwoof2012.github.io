@@ -217,6 +217,17 @@ body.dark * {
         padding: 5vw;
     }
 
+    .header {
+        font-family: arial;
+        color: var(--color-text-normal);
+        position: absolute;
+        left: calc(50% - 45vw) !important;
+        width: 90vw !important;
+        top: 20% !important;
+        font-size: 200px;
+        text-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+    }
+
     .system-requirements {
         font-family: arial;
         display: flex;
@@ -227,19 +238,22 @@ body.dark * {
         display: flex;
         flex-direction: column;
         overflow-wrap: anywhere;
-        justify-content: center;
+        justify-content: center !important;
     }
 
     .system-requirements .row .column {
         display: flex;
         flex-direction: column;
-        width: 90%;
+        width: 90% !important;
+        position: relative;
+        left: 2.5%;
         background: var(--color-body-flex);
-        margin: 10px;
-        padding: 10px;
+        margin: 10px !important;
+        padding: 10px !important;
         border: 1px solid var(--color-body-flex);
         border-radius: 25px;
         box-shadow: 0.5vh 0.5vh var(--color-body-box-shadow);
+    }ox-shadow: 0.5vh 0.5vh var(--color-body-box-shadow);
     }
 }
 
@@ -414,16 +428,18 @@ body.dark * {
         display: flex;
         flex-direction: column;
         overflow-wrap: anywhere;
-        justify-content: center;
+        justify-content: center !important;
     }
 
     .system-requirements .row .column {
         display: flex;
         flex-direction: column;
-        width: 90%;
+        width: 90% !important;
+        position: relative;
+        left: 2.5%;
         background: var(--color-body-flex);
-        margin: 10px;
-        padding: 10px;
+        margin: 10px !important;
+        padding: 10px !important;
         border: 1px solid var(--color-body-flex);
         border-radius: 25px;
         box-shadow: 0.5vh 0.5vh var(--color-body-box-shadow);
