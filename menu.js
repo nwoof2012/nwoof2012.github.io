@@ -25,14 +25,16 @@ button.addEventListener("click", function() {
 });
 
 
-var colorScheme = 0;
+var colorScheme = localStorage.getItem("currentTheme");
 
 const body = document.querySelector("body");
 
-if(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    colorScheme = 1;
-} else {
-    colorScheme = 0;
+if (!localStorage.getItem("currentTheme")) {
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        colorScheme = 1;
+    } else {
+        colorScheme = 0;
+    }
 }
 
 setCurrentTheme();
@@ -43,6 +45,7 @@ themeButton.addEventListener("click", event => {
     } else {
         colorScheme = 1;
     }
+    localStorage.setItem("currentTheme",colorScheme);
     setCurrentTheme();
 });
 
@@ -52,6 +55,8 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', eve
     if(newColorScheme == "dark") colorScheme = 1;
 
     if (newColorScheme == "light") colorScheme = 0;
+    
+    localStorage.setItem("currentTheme", colorScheme);
 
     setCurrentTheme();
 });

@@ -76,7 +76,6 @@ body, html {
     position: fixed;
     top: 0;
     width: 100vw;
-    background: var(--color-menu);
     margin: 0;
     padding: 0;
     z-index: 10000;
@@ -89,6 +88,10 @@ body, html {
     padding: 0;
     justify-content: center;
     display: flex;
+    width: fit-content;
+    position: fixed;
+    top: 0;
+    left:50%;
 }
 
 .global-grid nav a {
@@ -130,7 +133,7 @@ body, html {
     width: 220px;
     position: absolute;
     top: 73px;
-    left: 25px;
+    left: calc(50vw - 110px);
     margin: 0;
     padding: 0;
     transition: height .125s ease-in;
