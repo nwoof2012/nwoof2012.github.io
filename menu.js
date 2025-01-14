@@ -8,16 +8,12 @@ var menuToggle = false;
 
 button.addEventListener("click", function() {
     if (menuToggle) {
-        menuObject.style.top = '-150vh';
-        menuParent.style.top = '-150vh';
-        themeButton.style.top = '-100vh';
+        menuParent.classList.remove("open");
         container.classList.remove("scroll-hide");
         button.classList.remove("invert");
         menuToggle = false;
     } else {
-        menuObject.style.top = 0;
-        menuParent.style.top = 0;
-        themeButton.style.top = '65px';
+        menuParent.classList.add("open");
         container.classList.add("scroll-hide");
         button.classList.add("invert");
         menuToggle = true;
