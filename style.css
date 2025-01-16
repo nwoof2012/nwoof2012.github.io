@@ -680,8 +680,8 @@ body, html {
     width: fit-content;
     position: fixed;
     top: 0;
-    left: calc(50% - 200px);
-    width: 400px;
+    left: calc(50% - 262.5px);
+    width: 525px;
     border: 0px solid var(--color-menu);
     border-radius: 25px;
 }
@@ -910,7 +910,7 @@ body, html {
     width: 50px;
     position: fixed;
     top: 12.5px;
-    left: calc(50% + 140px);
+    left: calc(50% + 200px);
     z-index: 10001;
 }
 
