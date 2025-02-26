@@ -821,6 +821,11 @@ body, html {
     font-weight: 1000;
 }
 
+.banner {
+    width: 100%;
+    box-shadow: 5px 5px var(--color-body-box-shadow), -5px -5px var(--color-body-box-shadow), -5px 5px var(--color-body-box-shadow), 5px -5px var(--color-body-box-shadow);
+}
+
 .body .box a {
     color: var(--color-text-link);
 }
