@@ -16,6 +16,8 @@
 
     --color-footer: #000;
 
+    --color-line: #777;
+
     --color-text-normal: #FFF;
     --color-text-menu: #FFF;
     --color-text-link: #F00;
@@ -48,6 +50,8 @@ body.dark * {
     --color-body-flex: #CCC;
 
     --color-footer: #FFF;
+    
+    --color-line: #888;
 
     --color-text-normal: #000;
     --color-text-menu: #FFF;
@@ -775,8 +779,8 @@ body, html {
 
 .body .box {
     margin: 10px 5% 10px 5%;
-    width: 1083px;
-    padding: 10px;
+    width: 1043px;
+    padding: 30px;
     float: right;
     /*border: 1px solid #444;
     border-radius: 2.5vh;*/
@@ -805,7 +809,7 @@ body, html {
     box-shadow: 0.5vh 0.5vh var(--color-body-box-shadow);
 }
 
-.body .box h1, .body .box .row .column h1, .body .box .row .column h2, .body .box .row .column h3 {
+.body .box h1:not(.shaderH1), .body .box .row .column h1, .body .box .row .column h2, .body .box .row .column h3 {
     font-family: arial;
     text-align: center;
 }
@@ -839,6 +843,37 @@ body, html {
     max-width: 555px;
     /*border: 0px solid #444;
     border-radius: 2.5vh;*/
+}
+
+.alphaDisclaimer {
+    font-family: arial;
+    color: var(--color-text-normal);
+    font-size: 20px;
+    margin-top: 20px;
+    display: block;
+}
+
+.disclaimerHead {
+    font-family: arial;
+    color: var(--color-text-normal);
+    font-size: 22px;
+}
+
+.disclaimerBody {
+    font-family: arial;
+    color: var(--color-text-normal);
+    font-size: 18px;
+}
+
+.shaderH1, .shaderH2 {
+    font-family: arial;
+    color: var(--color-text-normal);
+    border-bottom: 2px solid var(--color-line);
+    text-align: left;
+}
+
+.body ul {
+    list-style-type: "- ";
 }
 
 .sidebar .box h3 {
