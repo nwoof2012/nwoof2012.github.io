@@ -67,8 +67,8 @@ body.dark * {
     }
 
     .body .box {
-        width: calc(100% - 1vh - 60px);
-        max-width: calc(100% - 1vh - 60px);
+        width: calc(100vw - 1vh - 60px);
+        max-width: calc(100vw - 1vh - 60px);
         margin-left: 0;
         margin-right: 0;
         float: left;
@@ -83,7 +83,6 @@ body.dark * {
     }
 
     .body {
-        max-width: 100% !important;
         flex-grow: 0 !important;
         width: 100% !important;
         max-width: 100% !important;
@@ -124,7 +123,7 @@ body.dark * {
         position: fixed;
         left: 0;
         width: 100% !important;
-        height: 100 !important;
+        height: 100% !important;
         background: var(--color-menu);
         margin: 0;
         padding: 0;
@@ -268,8 +267,8 @@ body.dark * {
     }
 
     .body .box {
-        width: calc(100% - 1vh - 60px);
-        max-width: calc(100% - 1vh - 60px);
+        width: calc(100vw - 1vh - 60px);
+        max-width: calc(100vw - 1vh - 60px);
         margin-left: 0;
         margin-right: 0;
         float: left;
@@ -325,7 +324,7 @@ body.dark * {
         position: fixed;
         left: 0;
         width: 100% !important;
-        height: 100 !important;
+        height: 100% !important;
         background: var(--color-menu);
         margin: 0;
         padding: 0;
@@ -482,8 +481,8 @@ body.dark * {
     }
 
     .body .box {
-        width: calc(100% - 1vh - 60px) !important;
-        max-width: calc(100% - 1vh - 60px) !important;
+        width: calc(100vw - 1vh - 60px) !important;
+        max-width: calc(100vw - 1vh - 60px) !important;
         margin-left: 0 !important;
         margin-right: 0 !important;
         float: left !important;
@@ -506,7 +505,7 @@ body.dark * {
         position: fixed;
         left: 0;
         width: 100% !important;
-        height: 100 !important;
+        height: 100% !important;
         background: var(--color-menu);
         margin: 0;
         padding: 0;
