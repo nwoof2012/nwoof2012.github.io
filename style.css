@@ -19,6 +19,7 @@
     --color-line: #777;
 
     --color-text-normal: #FFF;
+    --color-text-faded: #CDD;
     --color-text-menu: #FFF;
     --color-text-link: #F00;
 
@@ -54,6 +55,7 @@ body.dark * {
     --color-line: #888;
 
     --color-text-normal: #000;
+    --color-text-faded: #233;
     --color-text-menu: #FFF;
     --color-text-link: #F00;
 
@@ -616,6 +618,64 @@ body.dark * {
         border-radius: 25px;
         box-shadow: 0.5vh 0.5vh var(--color-body-box-shadow);
     }
+}
+
+.profile-background {
+    background: url('https://cdn.bsky.app/img/banner/plain/did:plc:3fbyupxnsiv5pgfr6tuia3uv/bafkreid7cxu36nkragikbvhso6sx6va34u4et4qcfw5g3x34khvnarxhwm@jpeg');
+    width: 100%;
+    aspect-ratio: 3/1;
+    position: relative;
+    background-size: cover;
+}
+
+.profile-picture {
+    height: 125px;
+    position: relative;
+    top: -50px;
+    left: 12.5px;
+    border-radius: 100%;
+}
+
+.profile-name {
+    font-size: 30px;
+    font-family: arial;
+    font-weight: bold;
+    position: relative;
+    top: -87.5px;
+}
+
+.profile-tag {
+    font-size: 18px;
+    font-family: arial;
+    position: relative;
+    top: -75px;
+    height: 25px;
+    color: var(--color-text-faded);
+}
+
+.profile-description {
+    font-size: 18px;
+    font-family: arial;
+    position: relative;
+    top: -62.5px;
+    height: 25px;
+}
+
+.bsky-button.follow-button {
+    background-color: #1185fe;
+    color: #FFF;
+    font-size: 18px;
+    font-family: arial;
+    text-decoration: none;
+    padding: 14px;
+    display: block;
+    width: fit-content;
+    border: 0px solid #1185fe;
+    border-radius: 25px;
+    position: relative;
+    left: 75%;
+    top: -120px;
+    margin: 12.5px;
 }
 
 body, html {

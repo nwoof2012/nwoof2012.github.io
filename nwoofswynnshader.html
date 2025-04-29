@@ -156,8 +156,26 @@
                 <div class="sidebar">
                     <div class="box">
                         <div class="side-item">
-                            <script src="https://cdn.commoninja.com/sdk/latest/commonninja.js" defer></script>
-                            <div class="commonninja_component pid-5e904299-25de-4955-901d-bbb2cc2059c0"></div>
+                            <div class="profile-background"></div>
+                            <img class="profile-picture"
+                                src="https://cdn.bsky.app/img/avatar/plain/did:plc:3fbyupxnsiv5pgfr6tuia3uv/bafkreigigm7na4zyqd3fwhu4kchkezmh43olaxxtolto77baq2wd3fazbe@jpeg">
+                            <a class="bsky-button follow-button" href="https://bsky.app/profile/nwoof2012.bsky.social" target="_blank">
+                                <svg fill="currentColor" width="16" viewBox="0 0 24 24" height="16">
+                                    <path d="M12 3a1 1 0 0 1 1 1v7h7a1 1 0 1 1 0 2h-7v7a1 1 0 1 1-2 0v-7H4a1 1 0 1 1 0-2h7V4a1 1 0 0 1 1-1Z"></path>
+                                </svg>
+                                <span class="text">Follow</span>
+                            </a>
+                            <div class="profile-name">Nwoof</div>
+                            <div class="profile-tag">@nwoof2012.bsky.social</div>
+                            <div class="profile-description">Developer behind Nwoof's Wynn Shader for Minecraft: Java Edition. <a
+                                    href="https://modrinth.com/shader/nwoofs-wynn-shader">https://modrinth.com/shader/nwoofs-wynn-shader</a></div>
+                            <div class="profile-stats">
+                                <div class="profile-followers"></div>
+                                <div class="profile-following"></div>
+                            </div>
+                            </div>
+                            <bsky-embed username="nwoof2012.bsky.social" limit="8">
+                            </bsky-embed></div>
                         </div>
                     </div>
                 </div>
@@ -167,5 +185,8 @@
             </div>
         </div>
         <script src="menu.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bsky-embed@0.0.5/dist/bsky-embed.es.js" async></script>
+        <script src="https://unpkg.com/bsky-widget@~0.1/dist/index.js" type="module">
+        </script>
     </body>
 </html>
