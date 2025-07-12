@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scrollJack">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,11 +8,11 @@
         <link rel="icon" href="img/favicon.png">
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
+    <body class="scrollJackBody">
         <div class="background">
             <img src="img/2024-11-21_12.26.54.png">
         </div>
-        <div class="global-grid">
+        <div class="global-grid container">
             <button class="menu-mobile-btn">≡</button>
             <div class="nav-parent"><nav class="nav">
                 <a href="./">Home</a>
@@ -26,167 +26,224 @@
                 <a href="https://www.youtube.com/@Nwoof">YouTube</a>
                 <img class="svg-image theme-button" src="svg/dark-theme-svgrepo-com.svg">
             </nav></div>
-            <div class="cover">
-                <img class="header" src="img/Logo15.png">
+            <div class="scrollJackContents">
+                <span class="scrollJackContent">
+                    <a href="#banner">
+                        <svg xmlns="http://www.w3.org/2000/svg">
+                            <circle r="25" cx="25" cy="25" fill="var(--theme-content-fill)" stroke="var(--theme-content-stroke)" stroke-width="3" />
+                        </svg>
+                    </a>
+                </span>
+                <span class="scrollJackContent">
+                    <a href="#disclaimer">
+                        <svg xmlns="http://www.w3.org/2000/svg">
+                            <circle r="25" cx="25" cy="25" fill="var(--theme-content-fill)" stroke="var(--theme-content-stroke)"
+                                stroke-width="3" />
+                        </svg>
+                    </a>
+                </span>
+                <span class="scrollJackContent">
+                    <a href="#abouta">
+                        <svg xmlns="http://www.w3.org/2000/svg">
+                            <circle r="25" cx="25" cy="25" fill="var(--theme-content-fill)" stroke="var(--theme-content-stroke)"
+                                stroke-width="3" />
+                        </svg>
+                    </a>
+                </span>
+                <span class="scrollJackContent">
+                    <a href="#aboutb">
+                        <svg xmlns="http://www.w3.org/2000/svg">
+                            <circle r="25" cx="25" cy="25" fill="var(--theme-content-fill)" stroke="var(--theme-content-stroke)"
+                                stroke-width="3" />
+                        </svg>
+                    </a>
+                </span>
+                <span class="scrollJackContent">
+                    <a href="#aboutc">
+                        <svg xmlns="http://www.w3.org/2000/svg">
+                            <circle r="25" cx="25" cy="25" fill="var(--theme-content-fill)" stroke="var(--theme-content-stroke)"
+                                stroke-width="3" />
+                        </svg>
+                    </a>
+                </span>
+                <span class="scrollJackContent">
+                    <a href="#download">
+                        <svg xmlns="http://www.w3.org/2000/svg">
+                            <circle r="25" cx="25" cy="25" fill="var(--theme-content-fill)" stroke="var(--theme-content-stroke)"
+                                stroke-width="3" />
+                        </svg>
+                    </a>
+                </span>
+                <span class="scrollJackContent">
+                    <a href="#specs">
+                        <svg xmlns="http://www.w3.org/2000/svg">
+                            <circle r="25" cx="25" cy="25" fill="var(--theme-content-fill)" stroke="var(--theme-content-stroke)"
+                                stroke-width="3" />
+                        </svg>
+                    </a>
+                </span>
             </div>
-            <div class="mid-section">
+            <div class="mid-section scrollJackSection">
                 <div class="body">
-                    <div class="box">
-                        <h1>Nwoof's Wynn Shader</h1>
-                        <img src="img/WynnShaderBanner.png" class="banner">
-                        <b class="alphaDisclaimer">THIS PROJECT IS CURRENTLY IN ALPHA. IF YOU ENCOUNTER ANY ERRORS/BUGS, I HIGHLY RECOMMEND
-                            REPORTING IT ON THE <a href="https://github.com/nwoof2012/Nwoofs-Wynn-Shader/issues">GITHUB PAGE</a>, ESPECIALLY IF
-                            NO ONE ELSE HAS YET.</b>
+                    <div class="box scrollJackBox">
+                        <div class="cover section" data-image-index="-1">
+                            <img class="header" src="img/Logo15.png" >
+                        </div>
+                        <!--<h1>Nwoof's Wynn Shader</h1>-->
+                        <div class="section bannerSection" id="banner" data-image-index="0">
+                        <img src="img/WynnShaderBanner.png" class="banner"></div>
+                        <div class="section" id="disclaimer" data-image-index="1">
+                            <div class="sectionBox featuresBox">
+                                <b class="alphaDisclaimer">THIS PROJECT IS CURRENTLY IN ALPHA. IF YOU ENCOUNTER ANY ERRORS/BUGS, I HIGHLY RECOMMEND
+                                REPORTING IT ON THE <a target="_blank" href="https://github.com/nwoof2012/Nwoofs-Wynn-Shader/issues">GITHUB PAGE</a>, ESPECIALLY IF
+                                NO ONE ELSE HAS YET.</b>
+                            </div>
+                        </div>
                         
-                        <h1 class="shaderH1">About</h1>
-                        <p>Are you looking to play Wynncraft with shaders, but don't want to compromise on playability or visuals? <b
-                                class="highlight"><a href="https://modrinth.com/shader/nwoofs-wynn-shader">Nwoof's Wynn Shader</a></b> is designed with a goal to fulfill that wish at its core. Designed and
-                            written based on problems encountered by Wynncraft players regarding shaders, this is the first shader designed with
-                            the Wynncraft player's experience in mind.</p>
+                        <div class="section" id="abouta" data-image-index="2">
+                            <div class="sectionBox"><h1 class="shaderH1">About</h1>
+                                <p>Are you looking to play Wynncraft with shaders, but don't want to compromise on playability or visuals? <b
+                                    class="highlight"><a target="_blank" href="https://modrinth.com/shader/nwoofs-wynn-shader">Nwoof's Wynn Shader</a></b> is designed with a goal to fulfill that wish at its core. Designed and
+                                written based on problems encountered by Wynncraft players regarding shaders, this is the first shader designed with
+                                the Wynncraft player's experience in mind.</p>
+                            </div>
+                        </div>
                         
-                        <h1 class="shaderH1">Features</h1>
-                        <ul>
-                            <li>
-                                <h2 class="shaderH2">Shadowmapping</h2>
-                                Virtual texture-based shadow system. Provides customization options such as adjustable resolution and culling
-                                distance.
-                            </li>
-                            <li>
-                                <h2 class="shaderH2">Bloom</h2>
-                                Simulates a glow effect for added realism to the world's lighting and illumination. The amount of total samples
-                                in this effect can be adjusted to provide the right balance of performance and visual quality.
-                            </li>
-                            <li>
-                                <h2 class="shaderH2">Lighting</h2>
-                                <p>The lighting algorithms include Scene-Aware Lighting that adjusts the color of the world's lighting based on
-                                    the original light source, toggleable Path-Traced Global Illumination which simulates the emission and
-                                    reflection of light rays, and a customizable range for controlling/balancing light levels. There is also
-                                    Custom Water with Screen Space Reflections and Light Refraction.</p>
-                            </li>
-                            <li>
-                                <h2 class="shaderH2">Sky</h2>
-                                The shader also comes with sky features such as Customizable Sky/Fog/Atmosphere Colors for various times of day,
-                                and Volumetric Clouds that adapt to the weather.
-                            </li>
-                            <li>
-                                <h2 class="shaderH2">Scene-Aware Grading</h2>
-                                When travelling throughout the world, the tonemapping and color grading will automatically adjust to a scheme
-                                which is appropriate for your location.
-                            </li>
-                            <li>
-                                <h2 class="shaderH2">Mod Support</h2>
-                                Nwoof's Wynn Shader has integrated support for mods like <a
-                                    href="https://modrinth.com/mod/wynncraft-dynamic-weather">Wynncraft Dynamic Weather</a>, <a
-                                    href="https://modrinth.com/mod/distanthorizons">Distant Horizons</a>, and <a
-                                    href="https://www.patreon.com/Haubna">Physics Mod</a>.
-                            </li>
-                        </ul>
-                        
-                        <h1 class="shaderH1">Additional Links</h1>
-                        <ul>
-                            <li>
-                                <a href="https://bsky.app/profile/nwoof2012.bsky.social">Bluesky</a> - This is my Bluesky account. I announce
-                                feature updates and milestones here.
-                            </li>
-                        </ul>
-                        <h3 class="disclaimerHead">Disclaimer</h3>
-                        <span class="disclaimerBody">Nwoof's Wynn Shader is in no way affiliated with Wynncraft or any of the supported mods. Do
-                            not send them any bugs related to my shader, instead send them directly to me.</span>
+                        <div class="section" id="aboutb" data-image-index="3">
+                            <div class="sectionMid">
+                                <div class="sectionBox featuresBox"><h1 class="shaderH1">Features</h1></div>
+                                    <div class="sectionBox">
+                                        <h2 class="shaderH2">Shadowmapping</h2>
+                                        Virtual texture-based shadow system. Provides customization options such as adjustable resolution and culling
+                                        distance.
+                                    </div>
+                                    <div class="sectionBox">
+                                        <h2 class="shaderH2">Bloom</h2>
+                                        Simulates a glow effect for added realism to the world's lighting and illumination. The amount of total samples
+                                        in this effect can be adjusted to provide the right balance of performance and visual quality.
+                                    </div>
+                                    <div class="sectionBox">
+                                        <h2 class="shaderH2">Lighting</h2>
+                                        <p>The lighting algorithms include Scene-Aware Lighting that adjusts the color of the world's lighting based on
+                                            the original light source, toggleable Path-Traced Global Illumination which simulates the emission and
+                                            reflection of light rays, and a customizable range for controlling/balancing light levels. There is also
+                                            Custom Water with Screen Space Reflections and Light Refraction.</p>
+                                    </div>
+                                    <div class="sectionBox">
+                                        <h2 class="shaderH2">Sky</h2>
+                                        The shader also comes with sky features such as Customizable Sky/Fog/Atmosphere Colors for various times of day,
+                                        and Volumetric Clouds that adapt to the weather.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section" id="aboutc" data-image-index="4">
+                                <div class="sectionMid">
+                                    <div class="sectionBox">
+                                        <h2 class="shaderH2">Scene-Aware Grading</h2>
+                                        When travelling throughout the world, the tonemapping and color grading will automatically adjust to a scheme
+                                        which is appropriate for your location.
+                                    </div>
+                                    <div class="sectionBox">
+                                    <h2 class="shaderH2">Mod Support</h2>
+                                        Nwoof's Wynn Shader has integrated support for mods like <a
+                                            href="https://modrinth.com/mod/wynncraft-dynamic-weather">Wynncraft Dynamic Weather</a>, <a
+                                            href="https://modrinth.com/mod/distanthorizons">Distant Horizons</a>, and <a
+                                            href="https://www.patreon.com/Haubna">Physics Mod</a>.
+                                    </div>
+                                <div class="sectionBox">
+                                    <h1 class="shaderH1">Additional Links</h1>
+                                    <ul>
+                                        <li>
+                                            <a target="_blank" href="https://bsky.app/profile/nwoof2012.bsky.social">Bluesky</a> - This is my Bluesky account. I announce
+                                            feature updates and milestones here.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="sectionBox">
+                                    <h3 class="disclaimerHead">Disclaimer</h3>
+                                    <span class="disclaimerBody">Nwoof's Wynn Shader is in no way affiliated with Wynncraft or any of the supported mods. Do
+                                        not send them any bugs related to my shader, instead send them directly to me.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section" id="download" data-image-index="5">
+                        <div class="sectionBox downloadsBox">
+                            <h3 class="downloadHead">Download</h3>
+                            <div class="downloads">
+                                <a class="downloadModrinth" target="_blank" href="https://modrinth.com/shader/nwoofs-wynn-shader/versions"><img class="downloadButton" src="img/modrinth.png"></a>
+                                <a class="downloadGithub" target="_blank" href="https://github.com/nwoof2012/Nwoofs-Wynn-Shader/releases"><img class="downloadButton" src="img/github.png"></a>
+                            </div>
+                        </div>
                     </div>
                     
-                    <div class="box">
-                        <h1>System Requirements</h1>
-                        <div class="system-requirements">
-                            <div class="row">
-                                <div class="column">
-                                    <h2>Minimum Specifications</h2>
-                                    <h3>High Preset, 1920x1080@30FPS</h3>
-                                    <div><b>CPU</b> — <span>Intel Core i7-9700k/AMD Ryzen 7 3700x</span></div>
-                                    <div><b>GPU</b> — <span>NVIDIA GeForce GTX 1650/AMD Radeon RX 570</span></div>
-                                    <div><b>RAM</b> — <span>16GB DDR4</span></div>
-                                </div>
-                                <div class="column">
-                                    <h2>Recommended Specifications (Casual)</h2>
-                                    <h3>High Preset, 1920x1080@60FPS</h3>
-                                    <div><b>CPU</b> — <span>Intel Core i5-10400/AMD Ryzen 5 5600</span></div>
-                                    <div><b>GPU</b> — <span>NVIDIA GeForce GTX 1070/AMD Radeon RX 5600 XT</span></div>
-                                    <div><b>RAM</b> — <span>16GB DDR4</span></div>
-                                </div>
-                                <div class="column">
-                                    <h2>Recommended Specifications (Regular)</h2>
-                                    <h3>Ultra Preset, 1920x1080@144FPS</h3>
-                                    <div><b>CPU</b> — <span>Intel Core i5-10600k/AMD Ryzen 5 5600x</span></div>
-                                    <div><b>GPU</b> — <span>NVIDIA GeForce RTX 2070 Super/AMD Radeon RX 5700 XT</span></div>
-                                    <div><b>RAM</b> — <span>32GB DDR4</span></div>
-                                </div>
-                                <div class="column">
-                                    <h2>Recommended Specifications (Serious)</h2>
-                                    <h3>Ultra Preset, 2560x1440@60FPS</h3>
-                                    <div><b>CPU</b> — <span>Intel Core i5-12600k/AMD Ryzen 5 7600x</span></div>
-                                    <div><b>GPU</b> — <span>NVIDIA GeForce RTX 3060 Ti/AMD Radeon RX 6600 XT</span></div>
-                                    <div><b>RAM</b> — <span>32GB DDR4</span></div>
-                                </div>
+                    <div class="section" id="specs" data-image-index="6">
+                        <div class="sectionMid">
+                            <div class="sectionBox featuresBox">
+                                <h1>System Requirements</h1>
                             </div>
-                            <div class="row">
-                                <div class="column">
-                                    <h2>Recommended Specifications (Sweaty)</h2>
-                                    <h3>Ultra Preset, 2560x1440@144FPS</h3>
-                                    <div><b>CPU</b> — <span>Intel Core i5-12600k/AMD Ryzen 5 7600x</span></div>
-                                    <div><b>GPU</b> — <span>NVIDIA GeForce RTX 3080 10GB/AMD Radeon RX 6800 XT</span></div>
-                                    <div><b>RAM</b> — <span>32GB DDR4</span></div>
-                                </div>
-                                <div class="column">
-                                    <h2>Recommended Specifications (Pro)</h2>
-                                    <h3>Ultra Preset, 3840x2160@60FPS</h3>
-                                    <div><b>CPU</b> — <span>Intel Core i5-13600k/AMD Ryzen 5 7600x</span></div>
-                                    <div><b>GPU</b> — <span>NVIDIA GeForce RTX 4070 Ti Super/AMD Radeon RX 7800 XT</span></div>
-                                    <div><b>RAM</b> — <span>32GB DDR5</span></div>
-                                </div>
-                                <div class="column">
-                                    <h2>Recommended Specifications (Elite)</h2>
-                                    <h3>Ultra Preset, 3840x2160@144FPS</h3>
-                                    <div><b>CPU</b> — <span>Intel Core i7-13700k/AMD Ryzen 7 7700x</span></div>
-                                    <div><b>GPU</b> — <span>NVIDIA GeForce RTX 4080 Super/AMD Radeon RX 7900 XT</span></div>
-                                    <div><b>RAM</b> — <span>32GB DDR5</span></div>
-                                </div>
+                            <div class="sectionBox">
+                                <h2>Minimum Specifications</h2>
+                                <h3>High Preset, 1920x1080@30FPS</h3>
+                                <div><b>CPU</b> — <span>Intel Core i7-9700k/AMD Ryzen 7 3700x</span></div>
+                                <div><b>GPU</b> — <span>NVIDIA GeForce GTX 1650/AMD Radeon RX 570</span></div>
+                                <div><b>RAM</b> — <span>16GB DDR4</span></div>
+                            </div>
+                            <div class="sectionBox">      
+                                <h2>Recommended Specifications (Casual)</h2>
+                                <h3>High Preset, 1920x1080@60FPS</h3>
+                                <div><b>CPU</b> — <span>Intel Core i5-10400/AMD Ryzen 5 5600</span></div>
+                                <div><b>GPU</b> — <span>NVIDIA GeForce GTX 1070/AMD Radeon RX 5600 XT</span></div>
+                                <div><b>RAM</b> — <span>16GB DDR4</span></div>
+                            </div>
+                            <div class="sectionBox">
+                                <h2>Recommended Specifications (Regular)</h2>
+                                <h3>Ultra Preset, 1920x1080@144FPS</h3>
+                                <div><b>CPU</b> — <span>Intel Core i5-10600k/AMD Ryzen 5 5600x</span></div>
+                                <div><b>GPU</b> — <span>NVIDIA GeForce RTX 2070 Super/AMD Radeon RX 5700 XT</span></div>
+                                <div><b>RAM</b> — <span>32GB DDR4</span></div>
+                            </div>
+                            <div class="sectionBox">
+                                <h2>Recommended Specifications (Serious)</h2>
+                                <h3>Ultra Preset, 2560x1440@60FPS</h3>
+                                <div><b>CPU</b> — <span>Intel Core i5-12600k/AMD Ryzen 5 7600x</span></div>
+                                <div><b>GPU</b> — <span>NVIDIA GeForce RTX 3060 Ti/AMD Radeon RX 6600 XT</span></div>
+                                <div><b>RAM</b> — <span>32GB DDR4</span></div>
+                            </div>
+                            <div class="sectionBox">
+                                <h2>Recommended Specifications (Sweaty)</h2>
+                                <h3>Ultra Preset, 2560x1440@144FPS</h3>
+                                <div><b>CPU</b> — <span>Intel Core i5-12600k/AMD Ryzen 5 7600x</span></div>
+                                <div><b>GPU</b> — <span>NVIDIA GeForce RTX 3080 10GB/AMD Radeon RX 6800 XT</span></div>
+                                <div><b>RAM</b> — <span>32GB DDR4</span></div>
+                            </div>
+                            <div class="sectionBox">
+                                <h2>Recommended Specifications (Pro)</h2>
+                                <h3>Ultra Preset, 3840x2160@60FPS</h3>
+                                <div><b>CPU</b> — <span>Intel Core i5-13600k/AMD Ryzen 5 7600x</span></div>
+                                <div><b>GPU</b> — <span>NVIDIA GeForce RTX 4070 Ti Super/AMD Radeon RX 7800 XT</span></div>
+                                <div><b>RAM</b> — <span>32GB DDR5</span></div>
+                            </div>
+                            <div class="sectionBox">
+                                <h2>Recommended Specifications (Elite)</h2>
+                                <h3>Ultra Preset, 3840x2160@144FPS</h3>
+                                <div><b>CPU</b> — <span>Intel Core i7-13700k/AMD Ryzen 7 7700x</span></div>
+                                <div><b>GPU</b> — <span>NVIDIA GeForce RTX 4080 Super/AMD Radeon RX 7900 XT</span></div>
+                                <div><b>RAM</b> — <span>32GB DDR5</span></div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="sidebar">
-                    <div class="box">
-                        <div class="side-item">
-                            <div class="profile-background"></div>
-                            <img class="profile-picture"
-                                src="https://cdn.bsky.app/img/avatar/plain/did:plc:3fbyupxnsiv5pgfr6tuia3uv/bafkreigigm7na4zyqd3fwhu4kchkezmh43olaxxtolto77baq2wd3fazbe@jpeg">
-                            <a class="bsky-button follow-button" href="https://bsky.app/profile/nwoof2012.bsky.social" target="_blank">
-                                <svg fill="currentColor" width="16" viewBox="0 0 24 24" height="16">
-                                    <path d="M12 3a1 1 0 0 1 1 1v7h7a1 1 0 1 1 0 2h-7v7a1 1 0 1 1-2 0v-7H4a1 1 0 1 1 0-2h7V4a1 1 0 0 1 1-1Z"></path>
-                                </svg>
-                                <span class="text">Follow</span>
-                            </a>
-                            <div class="profile-name">Nwoof</div>
-                            <div class="profile-tag">@nwoof2012.bsky.social</div>
-                            <div class="profile-description">Developer behind Nwoof's Wynn Shader for Minecraft: Java Edition. <a
-                                    href="https://modrinth.com/shader/nwoofs-wynn-shader">https://modrinth.com/shader/nwoofs-wynn-shader</a></div>
-                            <div class="profile-stats">
-                                <div class="profile-followers"></div>
-                                <div class="profile-following"></div>
-                            </div>
-                            </div>
-                            <bsky-embed username="nwoof2012.bsky.social" limit="8">
-                            </bsky-embed></div>
-                        </div>
+                    <div class="footer section">
+                        Copyright &copy; Trolly Studios 2025. All rights reserved
                     </div>
                 </div>
-            </div>
-            <div class="footer">
-                Copyright &copy; Trolly Studios 2023. All rights reserved
             </div>
         </div>
         <script src="menu.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bsky-embed@0.0.5/dist/bsky-embed.es.js" async></script>
+        <script src="bsky-embed.js" async></script>
         <script src="https://unpkg.com/bsky-widget@~0.1/dist/index.js" type="module">
         </script>
+        <script src="scrollJack.js"></script>
     </body>
 </html>

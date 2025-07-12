@@ -24,6 +24,11 @@
     --color-text-link: #F00;
 
     --theme-button-color: #FFF;
+
+    --theme-content-fill: #677F9E;
+    --theme-content-stroke: #35393d;
+
+    --theme-content-fill-selected: #677F9E;
 }
 
 body.light * {
@@ -244,6 +249,144 @@ body.dark * {
         border-radius: 25px;
         box-shadow: 0.5vh 0.5vh var(--color-body-box-shadow);
     }
+    
+    /*----------------[SCROLL JACKING]----------------*/
+    body.scrollJackBody, html.scrollJack {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        scroll-behavior: smooth;
+        overflow: hidden;
+    }
+
+    .container {
+        height: 100vh;
+        width: 100vw;
+        scroll-snap-type: y mandatory;
+        scroll-behavior: smooth;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        padding-right: 17px;
+    }
+
+    .section {
+        width: 100vw;
+        height: 100vh;
+        scroll-snap-align: start;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    .section:not(.bannerSection) {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .section:not(.cover):not(.footer) {
+        background: var(--color-body-background);
+    }
+
+    .section .featuresBox {
+        max-width: 85vw !important;
+        width: fit-content !important;
+        min-width: 46vw !important;
+        border: 1px var(--color-body-box);
+        border-radius: 100px;
+    }
+
+    .featuresBox h1 {
+        text-align: center;
+    }
+
+    .section .sectionBox:not(.featuresBox):not(.downloadsBox):not(.bskyBox) {
+        width: 46vw !important;
+        font-size: 1.35vw !important;
+        /*min-height: 250px;*/
+    }
+
+    .section .sectionBox h2 {
+        font-size: 1.4vw !important;
+    }
+
+    .section .sectionBox {
+        background: var(--color-body-box);
+        box-shadow: 1vw 1vw var(--color-body-box-shadow);
+        padding: 1vw;
+        color: var(--color-text-normal);
+        font-family: arial;
+        margin: 1vw;
+    }
+
+    .section .downloadsBox {
+        width: 85vw !important;
+        height: fit-content;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .downloadsBox .downloadHead {
+        width: 100%;
+        text-align: center;
+        font-size: 45px;
+    }
+
+    .downloadsBox .downloadGithub img, .downloadsBox .downloadModrinth img {
+        width: 45.25% !important;
+    }
+
+    .bskyBox {
+        width: 100vw;
+    }
+
+    .bskyBox bsky-box .max-w-screen-sm {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .section .sectionMid {
+        width: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .section .sectionBox p {
+        color: var(--color-text-normal);
+        font-family: arial;
+        font-size: 1.35vw !important;
+    }
+
+    .bannerSection {
+        align-items: center;
+    }
+
+    .bannerSection .banner {
+        position: relative;
+        left: 3vw;
+        width: 97vw !important;
+        height: auto !important;
+    }
+
+    .scrollJackContents {
+        position: fixed;
+        top: calc(50% - 192.5px);
+        display: flex;
+        flex-direction: column;
+        z-index: 1000;
+    }
+
+    .scrollJackContents img, .scrollJackContents span svg {
+        width: 50px;
+        height: 50px;
+        padding: 5px;
+        filter: brightness(0.65);
+    }
+
+    .scrollJackContents #selectedContent svg {
+        filter: brightness(1);
+    }
 }
 
 @media (min-device-width:480px) and (max-device-width: 926px) and (min-device-height: 320px) and (max-device-height: 428px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -429,7 +572,7 @@ body.dark * {
         padding-bottom: 20px;
     }
 
-    .box {
+    .box:not(.scrollJackBox) {
         box-shadow: 1vw 1vw var(--color-body-box-shadow);
     }
 
@@ -618,6 +761,144 @@ body.dark * {
         border-radius: 25px;
         box-shadow: 0.5vh 0.5vh var(--color-body-box-shadow);
     }
+
+    /*----------------[SCROLL JACKING]----------------*/
+    body.scrollJackBody, html.scrollJack {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        scroll-behavior: smooth;
+        overflow: hidden;
+    }
+
+    .container {
+        height: 100vh;
+        width: 100vw;
+        scroll-snap-type: y mandatory;
+        scroll-behavior: smooth;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        padding-right: 17px;
+    }
+
+    .section {
+        width: 100vw;
+        height: 100vh;
+        scroll-snap-align: start;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    .section:not(.bannerSection) {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .section:not(.cover):not(.footer) {
+        background: var(--color-body-background);
+    }
+
+    .section .featuresBox {
+        max-width: 85vw !important;
+        width: fit-content !important;
+        min-width: 46vw !important;
+        border: 1px var(--color-body-box);
+        border-radius: 100px;
+    }
+
+    .featuresBox h1 {
+        text-align: center;
+    }
+
+    .section .sectionBox:not(.featuresBox):not(.downloadsBox):not(.bskyBox) {
+        width: 46vw !important;
+        font-size: 1.35vw !important;
+        /*min-height: 250px;*/
+    }
+
+    .section .sectionBox h2 {
+        font-size: 1.4vw !important;
+    }
+
+    .section .sectionBox {
+        background: var(--color-body-box);
+        box-shadow: 1vw 1vw var(--color-body-box-shadow);
+        padding: 1vw;
+        color: var(--color-text-normal);
+        font-family: arial;
+        margin: 1vw;
+    }
+
+    .section .downloadsBox {
+        width: 85vw !important;
+        height: fit-content;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .downloadsBox .downloadHead {
+        width: 100%;
+        text-align: center;
+        font-size: 45px;
+    }
+
+    .downloadsBox .downloadGithub img, .downloadsBox .downloadModrinth img {
+        width: 45.25% !important;
+    }
+
+    .bskyBox {
+        width: 100vw;
+    }
+
+    .bskyBox bsky-box .max-w-screen-sm {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .section .sectionMid {
+        width: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .section .sectionBox p {
+        color: var(--color-text-normal);
+        font-family: arial;
+        font-size: 1.35vw !important;
+    }
+
+    .bannerSection {
+        align-items: center;
+    }
+
+    .bannerSection .banner {
+        position: relative;
+        left: 3vw;
+        width: 97vw !important;
+        height: auto !important;
+    }
+
+    .scrollJackContents {
+        position: fixed;
+        top: calc(50% - 192.5px);
+        display: flex;
+        flex-direction: column;
+        z-index: 1000;
+    }
+
+    .scrollJackContents img, .scrollJackContents span svg {
+        width: 50px;
+        height: 50px;
+        padding: 5px;
+        filter: brightness(0.65);
+    }
+
+    .scrollJackContents #selectedContent svg {
+        filter: brightness(1);
+    }
 }
 
 .profile-background {
@@ -781,7 +1062,7 @@ body, html {
     background: var(--color-menu-dropdown-hover);
 }
 
-.mid-section {
+.mid-section:not(.scrollJackSection) {
     display: flex;
     background: var(--color-body-background);
 }
@@ -798,13 +1079,13 @@ body, html {
     margin-bottom: 20px;
 }
 
-.box {
+.box:not(.scrollJackBox) {
     background: var(--color-body-box);
     box-shadow: 1vh 1vh var(--color-body-box-shadow);
     color: var(--color-text-normal);
 }
 
-.body .box {
+.body .box:not(.scrollJackBox) {
     margin: 10px 5% 10px 5%;
     width: 1043px;
     padding: 30px;
@@ -846,13 +1127,37 @@ body, html {
     font-size: 18px;
 }
 
+.body .box .downloads {
+    display: flex;
+    justify-content: center;
+}
+
+.body .box .downloadHead {
+    font-size: 25px;
+    text-align: center;
+}
+
+.body .box .downloadModrinth, .body .box .downloadGithub {
+    font-family: arial;
+    font-size: 18px;
+    height: 150px;
+}
+
+.downloadModrinth {
+    margin: 0px 25px;
+}
+
+.body .box a img {
+    height: 100%;
+}
+
 .body .box .minihead {
     font-family: arial;
     font-size: 18px;
     font-weight: 1000;
 }
 
-.banner {
+.banner:not(.section) {
     width: 100%;
     box-shadow: 5px 5px var(--color-body-box-shadow), -5px -5px var(--color-body-box-shadow), -5px 5px var(--color-body-box-shadow), 5px -5px var(--color-body-box-shadow);
 }
@@ -892,7 +1197,7 @@ body, html {
     font-size: 18px;
 }
 
-.shaderH1, .shaderH2 {
+.shaderH1, .shaderH2, .downloadHead {
     font-family: arial;
     color: var(--color-text-normal);
     border-bottom: 2px solid var(--color-line);
@@ -968,9 +1273,12 @@ body, html {
     color: var(--color-text-normal);
     text-decoration: none;
     font-family: Arial;
-    padding: 2vh;
     text-align: center;
     font-size: 18px;
+}
+
+.footer:not(.section) {
+    padding: 2vh;
 }
 
 .menu-mobile-btn {
@@ -991,4 +1299,134 @@ filter: brightness(0%);
 
 body.dark .svg-image {
     filter: brightness(1000%);
+}
+
+/*----------------[SCROLL JACKING]----------------*/
+body.scrollJackBody, html.scrollJack {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-right: 17px;
+}
+
+.section {
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.section:not(.bannerSection) {
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.section:not(.cover):not(.footer) {
+    background: var(--color-body-background);
+}
+
+.section .featuresBox {
+    width: 96vh;
+    border: 1px var(--color-body-box);
+    border-radius: 100px;
+}
+
+.featuresBox h1 {
+    text-align: center;
+}
+
+.section .sectionBox:not(.featuresBox):not(.downloadsBox):not(.bskyBox) {
+    width: 46vh;
+    font-size: 1.3vh;
+    /*min-height: 250px;*/
+}
+
+.section .sectionBox {
+    background: var(--color-body-box);
+    box-shadow: 1vh 1vh var(--color-body-box-shadow);
+    padding: 1vh;
+    color: var(--color-text-normal);
+    font-family: arial;
+    margin: 1vh;
+}
+
+.section .downloadsBox {
+    width: 100vh;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.downloadsBox .downloadHead {
+    width: 100%;
+    text-align: center;
+    font-size: 45px;
+}
+
+.downloadsBox .downloadGithub img, .downloadsBox .downloadModrinth img {
+    width: 45.25% !important;
+}
+
+.bskyBox {
+    width: 100vh;
+}
+
+.bskyBox bsky-box .max-w-screen-sm {
+    display: flex;
+    flex-direction: row;
+}
+
+.section .sectionMid {
+    width: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section .sectionBox p {
+    color: var(--color-text-normal);
+    font-family: arial;
+    font-size: 1.35vh;
+}
+
+.bannerSection {
+    align-items: center;
+}
+
+.bannerSection .banner {
+    height: 100%;
+    width: auto;
+}
+
+.scrollJackContents {
+    position: fixed;
+    top: calc(50% - 192.5px);
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.scrollJackContents img, .scrollJackContents span svg {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    filter: brightness(0.65);
+}
+
+.scrollJackContents #selectedContent svg {
+    filter: brightness(1);
 }
