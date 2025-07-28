@@ -1,5 +1,11 @@
+const isRetinaMobile = window.matchMedia(
+    "screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2)"
+).matches;
+
 const images = document.querySelectorAll('.scrollJackContent');
 const sections = document.querySelectorAll('.section');
+
+const sectionsMobile = document.querySelectorAll('.scrollJackBoxMobile');
 
 function updateActiveImage(index) {
     // Remove active id from all images
@@ -14,6 +20,23 @@ function updateActiveImage(index) {
 }
 
 let visibleSections = new Map();
+
+let currentIndex = 0;
+
+function scrollToSection(index) {
+    if (index >= 0 && index < sectionsMobile.length) {
+        currentIndex = index;
+        sectionsMobile[index].scrollIntoView({ behavior: 'smooth' });
+    }
+}
+
+document.getElementById('nextBtn').addEventListener('click', () => {
+    scrollToSection(currentIndex + 1);
+});
+
+document.getElementById('prevBtn').addEventListener('click', () => {
+    scrollToSection(currentIndex - 1);
+});
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {

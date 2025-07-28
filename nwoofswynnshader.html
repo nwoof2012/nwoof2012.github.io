@@ -26,26 +26,39 @@
                 <a href="https://www.youtube.com/@Nwoof">YouTube</a>
                 <img class="svg-image theme-button" src="svg/dark-theme-svgrepo-com.svg">
             </nav></div>
+            <div class="scrollJackContentsMobile">
+                <span class="prevBtn" id="prevBtn">
+                    <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+                        <polygon points="50,10 100,50 0,50" />
+                    </svg>   
+                </span>
+                <span class="nextBtn" id="nextBtn">
+                    <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+                        <polygon points="50,50 100,10 0,10" />
+                    </svg>
+                </span>
+            </div>
             <div class="scrollJackContents">
                 <span class="scrollJackContent">
                     <a href="#banner">
                         <svg xmlns="http://www.w3.org/2000/svg">
-                            <circle r="25" cx="25" cy="25" fill="var(--theme-content-fill)" stroke="var(--theme-content-stroke)" stroke-width="3" />
+                            <circle r="var(--theme-content-radius)" cx="var(--theme-content-size)" cy="var(--theme-content-size)"
+                                fill="var(--theme-content-fill)" stroke="var(--theme-content-stroke)" stroke-width="3" />
                         </svg>
                     </a>
                 </span>
                 <span class="scrollJackContent">
                     <a href="#disclaimer">
                         <svg xmlns="http://www.w3.org/2000/svg">
-                            <circle r="25" cx="25" cy="25" fill="var(--theme-content-fill)" stroke="var(--theme-content-stroke)"
-                                stroke-width="3" />
+                            <circle r="var(--theme-content-radius)" cx="var(--theme-content-size)" cy="var(--theme-content-size)"
+                                fill="var(--theme-content-fill)" stroke="var(--theme-content-stroke)" stroke-width="3" />
                         </svg>
                     </a>
                 </span>
                 <span class="scrollJackContent">
                     <a href="#abouta">
                         <svg xmlns="http://www.w3.org/2000/svg">
-                            <circle r="25" cx="25" cy="25" fill="var(--theme-content-fill)" stroke="var(--theme-content-stroke)"
+                            <circle r="var(--theme-content-radius)" cx="var(--theme-content-size)" cy="var(--theme-content-size)" fill="var(--theme-content-fill)" stroke="var(--theme-content-stroke)"
                                 stroke-width="3" />
                         </svg>
                     </a>
@@ -53,7 +66,7 @@
                 <span class="scrollJackContent">
                     <a href="#aboutb">
                         <svg xmlns="http://www.w3.org/2000/svg">
-                            <circle r="25" cx="25" cy="25" fill="var(--theme-content-fill)" stroke="var(--theme-content-stroke)"
+                            <circle r="var(--theme-content-radius)" cx="var(--theme-content-size)" cy="var(--theme-content-size)" fill="var(--theme-content-fill)" stroke="var(--theme-content-stroke)"
                                 stroke-width="3" />
                         </svg>
                     </a>
@@ -61,7 +74,7 @@
                 <span class="scrollJackContent">
                     <a href="#aboutc">
                         <svg xmlns="http://www.w3.org/2000/svg">
-                            <circle r="25" cx="25" cy="25" fill="var(--theme-content-fill)" stroke="var(--theme-content-stroke)"
+                            <circle r="var(--theme-content-radius)" cx="var(--theme-content-size)" cy="var(--theme-content-size)" fill="var(--theme-content-fill)" stroke="var(--theme-content-stroke)"
                                 stroke-width="3" />
                         </svg>
                     </a>
@@ -69,7 +82,7 @@
                 <span class="scrollJackContent">
                     <a href="#download">
                         <svg xmlns="http://www.w3.org/2000/svg">
-                            <circle r="25" cx="25" cy="25" fill="var(--theme-content-fill)" stroke="var(--theme-content-stroke)"
+                            <circle r="var(--theme-content-radius)" cx="var(--theme-content-size)" cy="var(--theme-content-size)" fill="var(--theme-content-fill)" stroke="var(--theme-content-stroke)"
                                 stroke-width="3" />
                         </svg>
                     </a>
@@ -77,7 +90,7 @@
                 <span class="scrollJackContent">
                     <a href="#specs">
                         <svg xmlns="http://www.w3.org/2000/svg">
-                            <circle r="25" cx="25" cy="25" fill="var(--theme-content-fill)" stroke="var(--theme-content-stroke)"
+                            <circle r="var(--theme-content-radius)" cx="var(--theme-content-size)" cy="var(--theme-content-size)" fill="var(--theme-content-fill)" stroke="var(--theme-content-stroke)"
                                 stroke-width="3" />
                         </svg>
                     </a>
@@ -86,13 +99,13 @@
             <div class="mid-section scrollJackSection">
                 <div class="body">
                     <div class="box scrollJackBox">
-                        <div class="cover section" data-image-index="-1">
+                        <div class="cover section scrollJackBoxMobile" data-image-index="-1">
                             <img class="header" src="img/Logo15.png" >
                         </div>
                         <!--<h1>Nwoof's Wynn Shader</h1>-->
                         <div class="section bannerSection" id="banner" data-image-index="0">
-                        <img src="img/WynnShaderBanner.png" class="banner"></div>
-                        <div class="section" id="disclaimer" data-image-index="1">
+                        <img src="img/WynnShaderBanner.png" class="banner scrollJackBoxMobile"></div>
+                        <div class="section scrollJackBoxMobile" id="disclaimer" data-image-index="1">
                             <div class="sectionBox featuresBox">
                                 <b class="alphaDisclaimer">THIS PROJECT IS CURRENTLY IN ALPHA. IF YOU ENCOUNTER ANY ERRORS/BUGS, I HIGHLY RECOMMEND
                                 REPORTING IT ON THE <a target="_blank" href="https://github.com/nwoof2012/Nwoofs-Wynn-Shader/issues">GITHUB PAGE</a>, ESPECIALLY IF
@@ -100,7 +113,7 @@
                             </div>
                         </div>
                         
-                        <div class="section" id="abouta" data-image-index="2">
+                        <div class="section scrollJackBoxMobile" id="abouta" data-image-index="2">
                             <div class="sectionBox"><h1 class="shaderH1">About</h1>
                                 <p>Are you looking to play Wynncraft with shaders, but don't want to compromise on playability or visuals? <b
                                     class="highlight"><a target="_blank" href="https://modrinth.com/shader/nwoofs-wynn-shader">Nwoof's Wynn Shader</a></b> is designed with a goal to fulfill that wish at its core. Designed and
@@ -111,25 +124,25 @@
                         
                         <div class="section" id="aboutb" data-image-index="3">
                             <div class="sectionMid">
-                                <div class="sectionBox featuresBox"><h1 class="shaderH1">Features</h1></div>
-                                    <div class="sectionBox">
+                                <div class="sectionBox featuresBox scrollJackBoxMobile"><h1 class="shaderH1">Features</h1></div>
+                                    <div class="sectionBox scrollJackBoxMobile">
                                         <h2 class="shaderH2">Shadowmapping</h2>
                                         Virtual texture-based shadow system. Provides customization options such as adjustable resolution and culling
                                         distance.
                                     </div>
-                                    <div class="sectionBox">
+                                    <div class="sectionBox scrollJackBoxMobile">
                                         <h2 class="shaderH2">Bloom</h2>
                                         Simulates a glow effect for added realism to the world's lighting and illumination. The amount of total samples
                                         in this effect can be adjusted to provide the right balance of performance and visual quality.
                                     </div>
-                                    <div class="sectionBox">
+                                    <div class="sectionBox scrollJackBoxMobile">
                                         <h2 class="shaderH2">Lighting</h2>
                                         <p>The lighting algorithms include Scene-Aware Lighting that adjusts the color of the world's lighting based on
                                             the original light source, toggleable Path-Traced Global Illumination which simulates the emission and
                                             reflection of light rays, and a customizable range for controlling/balancing light levels. There is also
                                             Custom Water with Screen Space Reflections and Light Refraction.</p>
                                     </div>
-                                    <div class="sectionBox">
+                                    <div class="sectionBox scrollJackBoxMobile">
                                         <h2 class="shaderH2">Sky</h2>
                                         The shader also comes with sky features such as Customizable Sky/Fog/Atmosphere Colors for various times of day,
                                         and Volumetric Clouds that adapt to the weather.
@@ -138,19 +151,19 @@
                             </div>
                             <div class="section" id="aboutc" data-image-index="4">
                                 <div class="sectionMid">
-                                    <div class="sectionBox">
+                                    <div class="sectionBox scrollJackBoxMobile">
                                         <h2 class="shaderH2">Scene-Aware Grading</h2>
                                         When travelling throughout the world, the tonemapping and color grading will automatically adjust to a scheme
                                         which is appropriate for your location.
                                     </div>
-                                    <div class="sectionBox">
+                                    <div class="sectionBox scrollJackBoxMobile">
                                     <h2 class="shaderH2">Mod Support</h2>
                                         Nwoof's Wynn Shader has integrated support for mods like <a
                                             href="https://modrinth.com/mod/wynncraft-dynamic-weather">Wynncraft Dynamic Weather</a>, <a
                                             href="https://modrinth.com/mod/distanthorizons">Distant Horizons</a>, and <a
                                             href="https://www.patreon.com/Haubna">Physics Mod</a>.
                                     </div>
-                                <div class="sectionBox">
+                                <div class="sectionBox scrollJackBoxMobile">
                                     <h1 class="shaderH1">Additional Links</h1>
                                     <ul>
                                         <li>
@@ -159,7 +172,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="sectionBox">
+                                <div class="sectionBox scrollJackBoxMobile">
                                     <h3 class="disclaimerHead">Disclaimer</h3>
                                     <span class="disclaimerBody">Nwoof's Wynn Shader is in no way affiliated with Wynncraft or any of the supported mods. Do
                                         not send them any bugs related to my shader, instead send them directly to me.</span>
@@ -168,7 +181,7 @@
                         </div>
                     </div>
 
-                    <div class="section" id="download" data-image-index="5">
+                    <div class="section scrollJackBoxMobile" id="download" data-image-index="5">
                         <div class="sectionBox downloadsBox">
                             <h3 class="downloadHead">Download</h3>
                             <div class="downloads">
@@ -180,52 +193,52 @@
                     
                     <div class="section" id="specs" data-image-index="6">
                         <div class="sectionMid">
-                            <div class="sectionBox featuresBox">
+                            <div class="sectionBox featuresBox scrollJackBoxMobile">
                                 <h1>System Requirements</h1>
                             </div>
-                            <div class="sectionBox">
+                            <div class="sectionBox scrollJackBoxMobile">
                                 <h2>Minimum Specifications</h2>
                                 <h3>High Preset, 1920x1080@30FPS</h3>
                                 <div><b>CPU</b> — <span>Intel Core i7-9700k/AMD Ryzen 7 3700x</span></div>
                                 <div><b>GPU</b> — <span>NVIDIA GeForce GTX 1650/AMD Radeon RX 570</span></div>
                                 <div><b>RAM</b> — <span>16GB DDR4</span></div>
                             </div>
-                            <div class="sectionBox">      
+                            <div class="sectionBox scrollJackBoxMobile">      
                                 <h2>Recommended Specifications (Casual)</h2>
                                 <h3>High Preset, 1920x1080@60FPS</h3>
                                 <div><b>CPU</b> — <span>Intel Core i5-10400/AMD Ryzen 5 5600</span></div>
                                 <div><b>GPU</b> — <span>NVIDIA GeForce GTX 1070/AMD Radeon RX 5600 XT</span></div>
                                 <div><b>RAM</b> — <span>16GB DDR4</span></div>
                             </div>
-                            <div class="sectionBox">
+                            <div class="sectionBox scrollJackBoxMobile">
                                 <h2>Recommended Specifications (Regular)</h2>
                                 <h3>Ultra Preset, 1920x1080@144FPS</h3>
                                 <div><b>CPU</b> — <span>Intel Core i5-10600k/AMD Ryzen 5 5600x</span></div>
                                 <div><b>GPU</b> — <span>NVIDIA GeForce RTX 2070 Super/AMD Radeon RX 5700 XT</span></div>
                                 <div><b>RAM</b> — <span>32GB DDR4</span></div>
                             </div>
-                            <div class="sectionBox">
+                            <div class="sectionBox scrollJackBoxMobile">
                                 <h2>Recommended Specifications (Serious)</h2>
                                 <h3>Ultra Preset, 2560x1440@60FPS</h3>
                                 <div><b>CPU</b> — <span>Intel Core i5-12600k/AMD Ryzen 5 7600x</span></div>
                                 <div><b>GPU</b> — <span>NVIDIA GeForce RTX 3060 Ti/AMD Radeon RX 6600 XT</span></div>
                                 <div><b>RAM</b> — <span>32GB DDR4</span></div>
                             </div>
-                            <div class="sectionBox">
+                            <div class="sectionBox scrollJackBoxMobile">
                                 <h2>Recommended Specifications (Sweaty)</h2>
                                 <h3>Ultra Preset, 2560x1440@144FPS</h3>
                                 <div><b>CPU</b> — <span>Intel Core i5-12600k/AMD Ryzen 5 7600x</span></div>
                                 <div><b>GPU</b> — <span>NVIDIA GeForce RTX 3080 10GB/AMD Radeon RX 6800 XT</span></div>
                                 <div><b>RAM</b> — <span>32GB DDR4</span></div>
                             </div>
-                            <div class="sectionBox">
+                            <div class="sectionBox scrollJackBoxMobile">
                                 <h2>Recommended Specifications (Pro)</h2>
                                 <h3>Ultra Preset, 3840x2160@60FPS</h3>
                                 <div><b>CPU</b> — <span>Intel Core i5-13600k/AMD Ryzen 5 7600x</span></div>
                                 <div><b>GPU</b> — <span>NVIDIA GeForce RTX 4070 Ti Super/AMD Radeon RX 7800 XT</span></div>
                                 <div><b>RAM</b> — <span>32GB DDR5</span></div>
                             </div>
-                            <div class="sectionBox">
+                            <div class="sectionBox scrollJackBoxMobile">
                                 <h2>Recommended Specifications (Elite)</h2>
                                 <h3>Ultra Preset, 3840x2160@144FPS</h3>
                                 <div><b>CPU</b> — <span>Intel Core i7-13700k/AMD Ryzen 7 7700x</span></div>
@@ -234,7 +247,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="footer section">
+                    <div class="footer section scrollJackBoxMobile">
                         Copyright &copy; Trolly Studios 2025. All rights reserved
                     </div>
                 </div>
