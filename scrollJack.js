@@ -3,30 +3,24 @@ const isRetinaMobile = window.matchMedia(
 ).matches;
 
 const images = document.querySelectorAll('.scrollJackContent');
-const sections = document.querySelectorAll('.section');
-
+const sections = document.querySelectorAll('[data-image-index]');
 const sectionsMobile = document.querySelectorAll('.scrollJackBoxMobile');
 
 function updateActiveImage(index) {
-    // Remove active id from all images
     images.forEach(img => img.removeAttribute('id'));
-
-    // Apply id to the current image
-    if(index >= 0) {
-        if (images[index]) {
-            images[index].id = 'selectedContent';
-        }
-    }
+    if (images[index]) images[index].id = 'selectedContent';
 }
 
 let visibleSections = new Map();
-
 let currentIndex = 0;
 
 function scrollToSection(index) {
     if (index >= 0 && index < sectionsMobile.length) {
         currentIndex = index;
-        sectionsMobile[index].scrollIntoView({ behavior: 'smooth' });
+        sectionsMobile[index].scrollIntoView({
+            behavior: 'smooth',
+            block: 'center'
+        });
     }
 }
 
@@ -49,14 +43,13 @@ const observer = new IntersectionObserver((entries) => {
     });
 
     if (visibleSections.size > 0) {
-        // Find the section that's most visible
         const best = [...visibleSections.entries()].sort((a, b) => b[1] - a[1])[0];
         updateActiveImage(best[0]);
     } else {
-        // If no sections are visible, remove the active id
         images.forEach(img => img.removeAttribute('id'));
     }
 }, {
+    root: document.querySelector('.container'),
     threshold: Array.from({ length: 101 }, (_, i) => i / 100),
     rootMargin: '0px',
 });
