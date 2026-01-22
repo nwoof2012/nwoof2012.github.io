@@ -1,7 +1,8 @@
 var button = document.getElementsByClassName('menu-mobile-btn')[0];
 var menuObject = document.querySelector("nav");
 var menuParent = document.getElementsByClassName('nav-parent')[0];
-var themeButton = document.getElementsByClassName('theme-button')[0];
+var themeButton = document.getElementsByClassName('theme-button')[1];
+var themeButtonMobile = document.getElementsByClassName('theme-button')[0];
 var container = document.querySelector("html");
 
 var menuToggle = false;
@@ -42,6 +43,16 @@ themeButton.addEventListener("click", event => {
         colorScheme = 1;
     }
     localStorage.setItem("currentTheme",colorScheme);
+    setCurrentTheme();
+});
+
+themeButtonMobile.addEventListener("click", event => {
+    if (colorScheme == 1) {
+        colorScheme = 0;
+    } else {
+        colorScheme = 1;
+    }
+    localStorage.setItem("currentTheme", colorScheme);
     setCurrentTheme();
 });
 
