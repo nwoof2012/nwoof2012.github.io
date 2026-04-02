@@ -1046,8 +1046,8 @@ body, html {
     width: fit-content;
     position: fixed;
     top: 0;
-    left: calc(50% - 262.5px);
-    width: 525px;
+    left: calc(50% - 325px);
+    width: 650px;
     border: 0px solid var(--color-menu);
     border-radius: 25px;
 }
@@ -1174,9 +1174,28 @@ body, html {
     text-align: center;
 }
 
-.body .box p, .body .box ul, .body .box .row .column div {
+.body .box p, .body .box ul, .body .box .row .column div, .body .box table {
     font-family: arial;
     font-size: 18px;
+}
+
+.body .box table tr th {
+    border-bottom: 2px solid var(--color-line);
+    width: 100%;
+}
+
+.body .box table tr th, .body .box table tr td {
+    text-align: left;
+    padding: 10px;
+}
+
+.body .box table {
+    border-collapse: collapse;
+}
+
+.body .box table tr td:first-child, .body .box table tr th:first-child {
+    border-right: 2px solid var(--color-line);
+    width: 160px;
 }
 
 .body .box .downloads {
@@ -1345,7 +1364,7 @@ body, html {
     width: 50px;
     position: fixed;
     top: 12.5px;
-    left: calc(50% + 200px);
+    left: calc(50% + 259px);
     z-index: 10001;
 }
 
