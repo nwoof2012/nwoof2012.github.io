@@ -17,6 +17,7 @@
     --color-footer: #000;
 
     --color-line: #777;
+    --color-line-sub: #CCC;
 
     --color-text-normal: #FFF;
     --color-text-faded: #CDD;
@@ -61,6 +62,7 @@ body.dark * {
     --color-footer: #FFF;
     
     --color-line: #888;
+    --color-line-sub: #333;
 
     --color-text-normal: #000;
     --color-text-faded: #233;
@@ -1180,7 +1182,7 @@ body, html {
 }
 
 .body .box table tr th {
-    border-bottom: 2px solid var(--color-line);
+    border-bottom: 4px solid var(--color-line);
     width: 100%;
 }
 
@@ -1193,8 +1195,12 @@ body, html {
     border-collapse: collapse;
 }
 
+.table-border {
+    border-top: 1.5px solid var(--color-line-sub);
+}
+
 .body .box table tr td:first-child, .body .box table tr th:first-child {
-    border-right: 2px solid var(--color-line);
+    border-right: 4px solid var(--color-line);
     width: 160px;
 }
 
