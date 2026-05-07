@@ -29,6 +29,9 @@
     --theme-content-fill: #677F9E;
     --theme-content-stroke: #35393d;
 
+    --theme-content-fill-hover: #FFFF00;
+    --theme-content-fill-disabled: #777F8E;
+
     --theme-content-fill-selected: #677F9E;
 
     --theme-content-radius: 25px;
@@ -484,18 +487,18 @@ body.dark * {
         height: fit-content;
     }
 
-    .scrollJackContentsMobile .prevBtn, .scrollJackContentsMobile .nextBtn {
+    .scrollJackContentsMobile .prevBtnMobile, .scrollJackContentsMobile .nextBtnMobile {
         position: fixed;
         left: calc(50% - 60px);
         height: 60px;
         width: 100px;
     }
     
-    .scrollJackContentsMobile .prevBtn {
+    .scrollJackContentsMobile .prevBtnMobile {
         top: 0;
     }
 
-    .scrollJackContentsMobile .nextBtn {
+    .scrollJackContentsMobile .nextBtnMobile {
         top: calc(100vh - 50px);
     }
 
@@ -770,13 +773,13 @@ body.dark * {
     .section:not(.bannerSection) {
         width: 100vw;
         height: fit-content !important;
-        min-height: 100vh;
+        min-height: 100vh !important;
         display: flex;
         justify-content: center;
         position: relative;
     }
 
-    .section:not(.footer):not(.cover):not(.bannerSection) {
+    .section:not(.footer):not(.cover):not(.bannerSection):not(.scrollJackBoxMobile) {
         scroll-snap-align: none !important;
     }
 
@@ -831,9 +834,17 @@ body.dark * {
         justify-content: center !important;
     }
 
+    .scrollJackBoxMobile {
+        height: 100vh !important;
+        min-height: 100vh;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+    }
+
     .section .downloadsBox {
         width: 85vw !important;
-        height: fit-content;
+        height: fit-content !important;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -921,23 +932,23 @@ body.dark * {
     }
 
     .scrollJackContentsMobile {
-        display: flex !important;
+        display: none !important;
         flex-direction: column !important;
         justify-content: center;
         width: 100vw;
     }
 
-    .scrollJackContentsMobile .prevBtn,
-    .scrollJackContentsMobile .nextBtn {
+    .scrollJackContentsMobile .prevBtnMobile,
+    .scrollJackContentsMobile .nextBtnMobile {
         position: fixed;
         left: calc(50% - 60px);
     }
 
-    .scrollJackContentsMobile .prevBtn {
+    .scrollJackContentsMobile .prevBtnMobile {
         top: 0;
     }
 
-    .scrollJackContentsMobile .nextBtn {
+    .scrollJackContentsMobile .nextBtnMobile {
         top: calc(100vh - 50px);
     }
 
@@ -1399,6 +1410,8 @@ body.scrollJackBody, html.scrollJack {
     width: 100%;
     margin: 0;
     scroll-behavior: smooth;
+    transform: translateZ(0);
+    will-change: transform;
     overflow: hidden;
 }
 
@@ -1419,6 +1432,7 @@ body.scrollJackBody, html.scrollJack {
     display: flex;
     justify-content: center;
     position: relative;
+    scroll-margin: 1px;
 }
 
 .section:not(.bannerSection) {
@@ -1550,4 +1564,19 @@ body.scrollJackBody, html.scrollJack {
 
 .scrollJackContentsMobile svg {
     fill: var(--theme-content-fill);
+}
+
+.scrollJackContents .prevBtn, .scrollJackContents .nextBtn {
+    fill: var(--theme-content-fill);
+    filter: brightness(2);
+}
+
+.scrollJackContents .prevBtn:not(.disabled):hover, .scrollJackContents .nextBtn:not(.disabled):hover {
+    fill: var(--theme-content-fill-hover);
+    filter: brightness(2);
+}
+
+.scrollJackContents .prevBtn.disabled, .scrollJackContents .nextBtn.disabled {
+    fill: var(--theme-content-fill-disabled);
+    filter: brightness(1.75);
 }

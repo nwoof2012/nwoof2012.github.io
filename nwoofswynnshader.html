@@ -10,7 +10,7 @@
     </head>
     <body class="scrollJackBody">
         <div class="background">
-            <img src="img/2025-11-18_09.52.34.png">
+            <img src="img/2026-05-07_14.24.27.png">
         </div>
         <div class="global-grid container">
             <button class="menu-mobile-btn">≡</button>
@@ -29,20 +29,25 @@
                 <img class="svg-image theme-button theme-button-desktop" src="svg/dark-theme-svgrepo-com.svg">
             </nav></div>
             <div class="scrollJackContentsMobile">
-                <span class="prevBtn" id="prevBtn">
+                <span class="prevBtnMobile" id="prevBtn">
                     <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
                         <polygon points="50,10 100,50 0,50" />
-                    </svg>   
+                    </svg>
                 </span>
-                <span class="nextBtn" id="nextBtn">
+                <span class="nextBtnMobile" id="nextBtn">
                     <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
                         <polygon points="50,50 100,10 0,10" />
                     </svg>
                 </span>
             </div>
             <div class="scrollJackContents">
+                <span class="prevBtn" id="prevBtn">
+                    <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+                        <polygon points="25,10 50,50 0,50" stroke="var(--theme-content-stroke)" stroke-width="3"/>
+                    </svg>
+                </span>
                 <span class="scrollJackContent">
-                    <a href="#banner">
+                    <a href="javascript:scrollToSection(1);">
                         <svg xmlns="http://www.w3.org/2000/svg">
                             <circle r="25px" cx="25px" cy="25px"
                                 fill="var(--theme-content-fill)" stroke="var(--theme-content-stroke)" stroke-width="3" />
@@ -50,7 +55,7 @@
                     </a>
                 </span>
                 <span class="scrollJackContent">
-                    <a href="#disclaimer">
+                    <a href="javascript:scrollToSection(2);">
                         <svg xmlns="http://www.w3.org/2000/svg">
                             <circle r="25px" cx="25px" cy="25px"
                                 fill="var(--theme-content-fill)" stroke="var(--theme-content-stroke)" stroke-width="3" />
@@ -58,7 +63,7 @@
                     </a>
                 </span>
                 <span class="scrollJackContent">
-                    <a href="#abouta">
+                    <a href="javascript:scrollToSection(3);">
                         <svg xmlns="http://www.w3.org/2000/svg">
                             <circle r="25px" cx="25px" cy="25px" fill="var(--theme-content-fill)" stroke="var(--theme-content-stroke)"
                                 stroke-width="3" />
@@ -66,7 +71,7 @@
                     </a>
                 </span>
                 <span class="scrollJackContent">
-                    <a href="#aboutb">
+                    <a href="javascript:scrollToSection(4);">
                         <svg xmlns="http://www.w3.org/2000/svg">
                             <circle r="25px" cx="25px" cy="25px" fill="var(--theme-content-fill)" stroke="var(--theme-content-stroke)"
                                 stroke-width="3" />
@@ -74,7 +79,7 @@
                     </a>
                 </span>
                 <span class="scrollJackContent">
-                    <a href="#aboutc">
+                    <a href="javascript:scrollToSection(5);">
                         <svg xmlns="http://www.w3.org/2000/svg">
                             <circle r="25px" cx="25px" cy="25px" fill="var(--theme-content-fill)" stroke="var(--theme-content-stroke)"
                                 stroke-width="3" />
@@ -82,7 +87,7 @@
                     </a>
                 </span>
                 <span class="scrollJackContent">
-                    <a href="#download">
+                    <a href="javascript:scrollToSection(6);">
                         <svg xmlns="http://www.w3.org/2000/svg">
                             <circle r="25px" cx="25px" cy="25px" fill="var(--theme-content-fill)" stroke="var(--theme-content-stroke)"
                                 stroke-width="3" />
@@ -90,7 +95,7 @@
                     </a>
                 </span>
                 <span class="scrollJackContent">
-                    <a href="#specs">
+                    <a href="javascript:scrollToSection(7);">
                         <svg xmlns="http://www.w3.org/2000/svg">
                             <circle r="25px" cx="25px" cy="25px" fill="var(--theme-content-fill)" stroke="var(--theme-content-stroke)"
                                 stroke-width="3" />
@@ -98,24 +103,29 @@
                     </a>
                 </span>
                 <span class="scrollJackContent">
-                    <a href="#faq">
+                    <a href="javascript:scrollToSection(8);">
                         <svg xmlns="http://www.w3.org/2000/svg">
                             <circle r="25px" cx="25px" cy="25px" fill="var(--theme-content-fill)" stroke="var(--theme-content-stroke)"
                                 stroke-width="3" />
                         </svg>
                     </a>
+                </span>
+                <span class="nextBtn" id="nextBtn">
+                    <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+                        <polygon points="25,50 50,10 0,10" stroke="var(--theme-content-stroke)" stroke-width="3"/>
+                    </svg>
                 </span>
             </div>
             <div class="mid-section scrollJackSection">
                 <div class="body">
                     <div class="box scrollJackBox">
-                        <div class="cover section scrollJackBoxMobile" data-image-index="-1">
+                        <div class="cover section scrollJackBoxMobile" data-image-index="0">
                             <img class="header" src="img/Logo15.png" >
                         </div>
                         <!--<h1>Nwoof's Wynn Shader</h1>-->
-                        <div class="section bannerSection" id="banner" data-image-index="0">
+                        <div class="section bannerSection" id="banner" data-image-index="1">
                         <img src="img/WynnShaderBannerUltrawideBackground.png" class="banner scrollJackBoxMobile"><img src="img/WynnShaderBannerUltrawideForeground.png" class="bannerForeground"></div>
-                        <div class="section scrollJackBoxMobile" id="disclaimer" data-image-index="1">
+                        <div class="section scrollJackBoxMobile" id="disclaimer" data-image-index="2">
                             <div class="sectionBox disclaimerBox">
                                 <b class="alphaDisclaimer">THIS PROJECT IS CURRENTLY IN ALPHA. IF YOU ENCOUNTER ANY ERRORS/BUGS, I HIGHLY RECOMMEND
                                 REPORTING IT ON THE <a target="_blank" href="https://github.com/nwoof2012/Nwoofs-Wynn-Shader/issues">GITHUB PAGE</a>, ESPECIALLY IF
@@ -123,7 +133,7 @@
                             </div>
                         </div>
                         
-                        <div class="section scrollJackBoxMobile" id="abouta" data-image-index="2">
+                        <div class="section scrollJackBoxMobile" id="abouta" data-image-index="3">
                             <div class="sectionBox"><h1 class="shaderH1">About</h1>
                                 <p>Are you looking to play Wynncraft with shaders, but don't want to compromise on playability or visuals? <b
                                     class="highlight"><a target="_blank" href="https://modrinth.com/shader/nwoofs-wynn-shader">Nwoof's Wynn Shader</a></b> is designed with a goal to fulfill that wish at its core. Designed and
@@ -132,7 +142,7 @@
                             </div>
                         </div>
                         
-                        <div class="section" id="aboutb" data-image-index="3">
+                        <div class="section" id="aboutb" data-image-index="4">
                             <div class="sectionMid">
                                 <div class="sectionBox featuresBox scrollJackBoxMobile"><h1 class="shaderH1">Features</h1></div>
                                     <div class="sectionBox scrollJackBoxMobile">
@@ -159,7 +169,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="section" id="aboutc" data-image-index="4">
+                            <div class="section" id="aboutc" data-image-index="5">
                                 <div class="sectionMid">
                                     <div class="sectionBox scrollJackBoxMobile">
                                         <h2 class="shaderH2">Scene-Aware Grading</h2>
@@ -191,7 +201,7 @@
                         </div>
                     </div>
 
-                    <div class="section scrollJackBoxMobile" id="download" data-image-index="5">
+                    <div class="section scrollJackBoxMobile" id="download" data-image-index="6">
                         <div class="sectionBox downloadsBox">
                             <h3 class="downloadHead">Download</h3>
                             <div class="downloads">
@@ -201,7 +211,7 @@
                         </div>
                     </div>
                     
-                    <div class="section" id="specs" data-image-index="6">
+                    <div class="section" id="specs" data-image-index="7">
                         <div class="sectionMid">
                             <div class="sectionBox featuresBox scrollJackBoxMobile">
                                 <h1>System Requirements</h1>
@@ -257,7 +267,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="section" id="faq" data-image-index="7">
+                    <div class="section" id="faq" data-image-index="8">
                         <div class="sectionMid">
                             <div class="sectionBox featuresBox scrollJackBoxMobile">
                                 <h1>Frequently Asked Questions</h1>
@@ -272,7 +282,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="footer section scrollJackBoxMobile">
+                    <div class="footer section scrollJackBoxMobile" data-image-index="9">
                         Copyright &copy; Trolly Studios 2025. All rights reserved
                     </div>
                 </div>
