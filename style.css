@@ -374,9 +374,12 @@ body.dark * {
         font-size: 5vh !important;
     }
 
-    .section .sectionBox {
+    .section .sectionBox:not(.noBkg) {
         background: var(--color-body-box);
         box-shadow: 1vw 1vw var(--color-body-box-shadow);
+    }
+
+    .section .sectionBox {
         padding: 1vw;
         color: var(--color-text-normal);
         font-family: arial;
@@ -793,11 +796,13 @@ body.dark * {
     }
 
     .section .featuresBox {
-        max-width: 85vw !important;
-        width: fit-content !important;
-        min-width: 46vw !important;
+        width: calc(100vw - 54px) !important;
+        height: 75vh !important;
         border: 1px var(--color-body-box);
         border-radius: 25px !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .featuresBox h1 {
@@ -806,6 +811,8 @@ body.dark * {
 
     .section .sectionBox:not(.featuresBox):not(.downloadsBox):not(.bskyBox) {
         width: calc(100vw - 54px) !important;
+        height: 75vh !important;
+        max-height: 75vh !important;
         font-size: 4.5vw !important;
         /*min-height: 250px;*/
     }
@@ -816,8 +823,6 @@ body.dark * {
     }
 
     .section .sectionBox {
-        background: var(--color-body-box);
-        box-shadow: 1vw 1vw var(--color-body-box-shadow);
         padding: 1vw;
         color: var(--color-text-normal);
         font-family: arial;
@@ -932,7 +937,7 @@ body.dark * {
     }
 
     .scrollJackContentsMobile {
-        display: none !important;
+        display: flex !important;
         flex-direction: column !important;
         justify-content: center;
         width: 100vw;
@@ -963,6 +968,18 @@ body.dark * {
         left: calc(50% - 45vw) !important;
         top: 15vh !important;
         width: 90vw !important;
+    }
+
+    .section .sectionBox:not(.featuresBox):not(.disclaimerBox):not(.downloadsBox):not(.bskyBox):not(.noBkg) {
+        width: 41vw !important;
+    }
+
+    .section .sectionMid, .section .featuresBox {
+        width: 96vw !important;
+    }
+
+    .downloadsBox {
+        width: 87vw !important;
     }
 }
 
@@ -1182,9 +1199,29 @@ body, html {
     box-shadow: 0.5vh 0.5vh var(--color-body-box-shadow);
 }
 
-.body .box h1:not(.shaderH1), .body .box .row .column h1, .body .box .row .column h2, .body .box .row .column h3 {
+.headerBox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.body .box h1:not(.shaderH1), .body .box .row .column h1, .body .box .row .column h2, .body .box .row .column h3, .body .box h2 {
     font-family: arial;
     text-align: center;
+}
+
+.body .box h1:not(.shaderH1):not(.documentHead), .body .box .row .column h1, .body .box .row .column h2, .body .box .row .column h3, .body .box h2:not(.shaderH2) {
+    border-bottom: 2px solid var(--color-line);
+    width: 50%;
+}
+
+.body .box h1.documentHead {
+    border-bottom: 2px solid var(--color-line);
+    width: 100%;
+}
+
+.body .box h2:not(.shaderH2) {
+    font-size: 27px;
 }
 
 .body .box p, .body .box ul, .body .box .row .column div, .body .box table {
@@ -1415,6 +1452,15 @@ body.scrollJackBody, html.scrollJack {
     overflow: hidden;
 }
 
+.body.scrollJackBody *, html.scrollJack * {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body.scrollJackBody::-webkit-scrollbar, html.scrollJack::-webkit-scrollbar {
+    display: none;
+}
+
 .container {
     height: 100vh;
     width: 100vw;
@@ -1446,8 +1492,14 @@ body.scrollJackBody, html.scrollJack {
 
 .section .featuresBox {
     width: 96vh;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     border: 1px var(--color-body-box);
-    border-radius: 100px;
+    border-radius: 50px;
+    background: var(--color-body-box);
+    box-shadow: 1vw 1vw var(--color-body-box-shadow);
 }
 
 .section .disclaimerBox {
@@ -1459,15 +1511,18 @@ body.scrollJackBody, html.scrollJack {
     text-align: center;
 }
 
-.section .sectionBox:not(.featuresBox):not(.disclaimerBox):not(.downloadsBox):not(.bskyBox) {
+.section .sectionBox:not(.featuresBox):not(.disclaimerBox):not(.downloadsBox):not(.bskyBox):not(.noBkg) {
     width: 46vh;
     font-size: 1.3vh;
     /*min-height: 250px;*/
 }
 
-.section .sectionBox {
+.section .sectionBox:not(.noBkg) {
     background: var(--color-body-box);
     box-shadow: 1vh 1vh var(--color-body-box-shadow);
+}
+
+.section .sectionBox {
     color: var(--color-text-normal);
     font-family: arial;
     margin: 1vh;

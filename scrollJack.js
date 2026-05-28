@@ -46,12 +46,12 @@ function scrollToSection(index) {
         {
             sectionsMobile[index].scrollIntoView({
                 behavior: 'smooth',
-                block: 'center'
+                block: 'start'
             });
         } else {
             sections[index].scrollIntoView({
                 behavior: 'smooth',
-                block: 'center'
+                block: 'start'
             });
         }
     }
@@ -73,9 +73,11 @@ prevButtonDesktop.addEventListener('click', () => {
     scrollToSection(currentIndex - 1);
 });
 
+const activeSections = isRetinaMobile ? sectionsMobile : sections;
+
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-        const index = parseInt(entry.target.dataset.imageIndex, 10);
+        const index = [...activeSections].indexOf(entry.target);
         if (entry.isIntersecting) {
             visibleSections.set(index, entry.intersectionRatio);
             currentIndex = index;
@@ -101,3 +103,8 @@ const observer = new IntersectionObserver((entries) => {
 
 if(isRetinaMobile) sectionsMobile.forEach(section => observer.observe(section));
 else sections.forEach(section => observer.observe(section));
+
+function loadScrollJack() {
+    currentIndex = 0;
+    updateActiveButtons(currentIndex);
+}
