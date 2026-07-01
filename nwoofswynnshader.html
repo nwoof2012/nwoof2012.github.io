@@ -116,15 +116,19 @@
                     </svg>
                 </span>
             </div>
+            <div class="stinger">
+                <img class="stinger-background" src="img/stingerbackground.png">
+                <img class="stinger-logo" src="img/favicon.png">
+            </div>
             <div class="mid-section scrollJackSection">
                 <div class="body">
                     <div class="box scrollJackBox">
-                        <div class="cover section scrollJackBoxMobile" data-image-index="0">
+                        <div class="cover section active scrollJackBoxMobile" data-image-index="0">
                             <img class="header" src="img/Logo15.png" >
                         </div>
                         <!--<h1>Nwoof's Wynn Shader</h1>-->
-                        <div class="section bannerSection" id="banner" data-image-index="1">
-                        <img src="img/WynnShaderBannerUltrawideBackground.png" class="banner scrollJackBoxMobile"><img src="img/WynnShaderBannerUltrawideForeground.png" class="bannerForeground"></div>
+                        <div class="section bannerSection scrollJackBoxMobile" id="banner" data-image-index="1">
+                        <img src="img/WynnShaderBannerUltrawideBackground.png" class="banner"><img src="img/WynnShaderBannerUltrawideForeground.png" class="bannerForeground"></div>
                         <div class="section scrollJackBoxMobile" id="disclaimer" data-image-index="2">
                             <div class="sectionBox disclaimerBox">
                                 <b class="alphaDisclaimer">THIS PROJECT IS CURRENTLY IN ALPHA. IF YOU ENCOUNTER ANY ERRORS/BUGS, I HIGHLY RECOMMEND
@@ -285,7 +289,7 @@
                         </div>
                     </div>
                     <div class="footer section scrollJackBoxMobile" data-image-index="9">
-                        Copyright &copy; Trolly Studios 2025. All rights reserved
+                        <div class="footertext">Copyright &copy; Trolly Studios 2025. All rights reserved</div>
                     </div>
                 </div>
             </div>
@@ -294,6 +298,6 @@
         <script src="bsky-embed.js" async></script>
         <script src="https://unpkg.com/bsky-widget@~0.1/dist/index.js" type="module">
         </script>
-        <script src="scrollJack.js"></script>
+        <script src="animatedScrollJack.js"></script>
     </body>
 </html>
