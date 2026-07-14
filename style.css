@@ -520,7 +520,7 @@ body.dark * {
     }
 
     .scrollJackContentsMobile .nextBtnMobile {
-        top: calc(100vh - 70px - env(safe-area-inset-bottom));
+        bottom: calc(10px + env(safe-area-inset-bottom));
     }
 
     .cover {
@@ -1074,7 +1074,7 @@ body.dark * {
     }
 
     .scrollJackContentsMobile .nextBtnMobile {
-        top: calc(100vh - 60px - env(safe-area-inset-bottom));
+        bottom: calc(10px + env(safe-area-inset-bottom));
     }
 
     .cover {
