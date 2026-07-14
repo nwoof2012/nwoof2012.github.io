@@ -136,7 +136,7 @@ body.dark * {
 
     .nav-parent {
         position: fixed;
-        left: 0;
+        left: 0 !important;
         width: 100% !important;
         height: 100% !important;
         /*background: var(--color-menu);*/
@@ -149,7 +149,7 @@ body.dark * {
         border-radius: 0px;
     }
 
-    .nav-parent:not(.open), .nav-parent:not(.open) * {
+    .nav-parent:not(.open) {
         top: -150vh !important;
     }
 
@@ -157,11 +157,11 @@ body.dark * {
         top: 0 !important;
     }
 
-    .nav-parent.open, .nav-parent:not(.open) .theme-button-desktop {
+    .nav-parent:not(.open) .theme-button-desktop {
         left: calc(100vw - 60px);
     }
 
-    .nav-parent.open, .nav-parent.open .theme-button-desktop {
+    .nav-parent.open .theme-button-desktop {
         top: 40vh !important;
         left: calc(100vw - 60px);
     }
@@ -516,11 +516,11 @@ body.dark * {
     }
     
     .scrollJackContentsMobile .prevBtnMobile {
-        top: 0;
+        top: calc(env(safe-area-inset-top) + 10px);
     }
 
     .scrollJackContentsMobile .nextBtnMobile {
-        top: calc(100vh - 50px);
+        top: calc(100vh - 70px - env(safe-area-inset-bottom));
     }
 
     .cover {
@@ -688,7 +688,7 @@ body.dark * {
 
     .nav-parent {
         position: fixed;
-        left: 0;
+        left: 0 !important;
         width: 100% !important;
         height: 100% !important;
         /*background: var(--color-menu);*/
@@ -706,17 +706,10 @@ body.dark * {
         top: -150vh !important;
     }
 
-    .nav-parent.open,
     .nav-parent.open *:not(.theme-button-desktop) {
         top: 0 !important;
     }
 
-    .nav-parent.open,
-    .nav-parent:not(.open) .theme-button-desktop {
-        left: calc(100vw - 60px);
-    }
-
-    .nav-parent.open,
     .nav-parent.open .theme-button-desktop {
         top: 40vh !important;
         left: calc(100vw - 60px);
@@ -1077,11 +1070,11 @@ body.dark * {
     }
 
     .scrollJackContentsMobile .prevBtnMobile {
-        top: 0;
+        top: calc(env(safe-area-inset-top) + 10px);
     }
 
     .scrollJackContentsMobile .nextBtnMobile {
-        top: calc(100vh - 50px);
+        top: calc(100vh - 60px - env(safe-area-inset-bottom));
     }
 
     .cover {
