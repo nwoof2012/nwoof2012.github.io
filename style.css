@@ -1835,8 +1835,12 @@ body.scrollJackBody::-webkit-scrollbar, html.scrollJack::-webkit-scrollbar {
     z-index: 10000;
 }
 
-.scrollJackContentsMobile svg {
+.scrollJackContentsMobile span:not(.disabled) svg {
     fill: var(--theme-content-fill);
+}
+
+.scrollJackContentsMobile span.disabled svg {
+    fill: var(--theme-content-fill-disabled);
 }
 
 .scrollJackContents .prevBtn, .scrollJackContents .nextBtn {
